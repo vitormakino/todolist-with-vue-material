@@ -39,6 +39,9 @@ jobs:
       # run tests!
       - run: yarn test
 
+      # run build
+      - run: yarn build
+
       - deploy:
           name: Deploy Master to firebase hosting
           command: |
